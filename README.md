@@ -1,8 +1,26 @@
 # LCS: A Language Converter Strategy for Zero-Shot Neural Machine Translation
 
-In this repo, we supply the codes and scripts for the implementation of LCS.
+In this repo, we supply the codes and scripts for the implementation of [LCS](https://arxiv.org/abs/2406.02876).
 
-## Codes
+## Data preprocess
+
+Preprocess detail can be found in `scripts/data`.
+
+
+
+## Training
+
+Training scripts can be found in `scripts/train`.
+
+
+
+## Inference
+
+Inference scripts can be found in `scripts/test`.
+
+
+
+## Implementation
 
 In this section, we introduce two branches of LCS implementation based on the open-source toolkit fairseq (version 1.0.0). *(Both are placed in `fairseq`, and we only place the modified python files to save space.)*
 
@@ -76,3 +94,19 @@ In the fair comparison setting, we list the scores of both implementations.
 _**Supervised** and **Zero-shot** represent the average scareBLEU (%), and **Accuracy** represents the language accuracy on the zero-shot translation. The above two models are trained with setting k to 2._
 
 The above table shows that the first branch yields a little advantage and the difference is negligible.
+
+
+
+## BibTex
+
+If you find this repo useful for your research, please consider citing our paper:
+
+```
+@article{sun2024lcs,
+  title={LCS: A Language Converter Strategy for Zero-Shot Neural Machine Translation},
+  author={Sun, Zengkui and Liu, Yijin and Meng, Fandong and Xu, Jinan and Chen, Yufeng and Zhou, Jie},
+  journal={arXiv preprint arXiv:2406.02876},
+  year={2024}
+}
+```
+
